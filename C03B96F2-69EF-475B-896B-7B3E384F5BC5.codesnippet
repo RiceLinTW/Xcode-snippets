@@ -3,23 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>appName</string>
+	<string>Localize strings - Default</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String
+	<string>// MARK: - Default
+"confirm"   = "Confirm";
+"cancel"    = "Cancel";
+"done"      = "Done";
+"send"      = "Send";
+"back"      = "Back";
+"play"      = "Play";
+"stop"      = "Stop";
+"error"     = "Error";
+"yes"       = "Yes";
+"no"        = "No";
+"settings"  = "Settings";
+
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5CE42DE9-5209-497C-B15F-2ECAB1DE0B32</string>
+	<string>C03B96F2-69EF-475B-896B-7B3E384F5BC5</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.XcodeStrings</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - App Name</string>
+	<string>Default Localize strings</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

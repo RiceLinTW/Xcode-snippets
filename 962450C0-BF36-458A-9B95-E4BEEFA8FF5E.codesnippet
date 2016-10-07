@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>appName</string>
+	<string>emailValidation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String
+	<string>    // MARK : - EmailCheck
+    func validateEmail(emailStr : String) -&gt; Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let EmailTest = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return EmailTest.evaluate(with: emailStr)
+    }
+
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5CE42DE9-5209-497C-B15F-2ECAB1DE0B32</string>
+	<string>962450C0-BF36-458A-9B95-E4BEEFA8FF5E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - App Name</string>
+	<string>Swift - Email Validation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
