@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tokenStr</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>StringOrComment</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func tokenizeArray(string:String) -&gt; NSArray {
+    let tokensArray = NSMutableArray()
+    
+    let locale = CFLocaleCopyCurrent()
+    var range = CFRangeMake(0, (string as NSString).length)
+    let tokenizer = CFStringTokenizerCreate(kCFAllocatorDefault, string
+        as CFString!, range, kCFStringTokenizerUnitWord, locale)
+    
+    var tokenType = CFStringTokenizerAdvanceToNextToken(tokenizer)
+    
+    while tokenType != CFStringTokenizerTokenType.init(rawValue: 0) {
+        range = CFStringTokenizerGetCurrentTokenRange(tokenizer!)
+        
+        let token = (string as NSString).substring(with: NSMakeRange(range.location, range.length))
+        tokensArray.add(token)
+        tokenType = CFStringTokenizerAdvanceToNextToken(tokenizer);
+    }
+    
+    return tokensArray
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E26CEBD3-4A7B-4854-8726-8A03CD12748F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift - String Tokenize</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
