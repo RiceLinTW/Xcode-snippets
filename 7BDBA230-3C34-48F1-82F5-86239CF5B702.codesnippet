@@ -3,24 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>faceDetection</string>
+	<string>multiple ranges of target</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    func getFaces(image: CIImage) -&gt; [CIFaceFeature]? {
-        let accuracy = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
-        let faceDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: accuracy)
-        return faceDetector?.features(in: image) as? [CIFaceFeature]
+	<string>import Foundation
+extension String {
+    func getMultipleRanges(target: String) throws -&gt; [NSRange] {
+        let regex = try NSRegularExpression(pattern: target, options: [])
+        return regex.matches(in: self, options: [], range: NSMakeRange(0, self.characters.count)).map {$0.range}
     }
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F149B67F-3279-4495-B593-75CEC5A51378</string>
+	<string>7BDBA230-3C34-48F1-82F5-86239CF5B702</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - Face Detection</string>
+	<string>Swift - String get multiple ranges of target</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
