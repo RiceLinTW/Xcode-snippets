@@ -6,7 +6,7 @@
 	<string>qrcode</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>func generateQRCode(text: String, color: UIColor, bgColor: UIColor, outputScale: CGFloat) -&gt; UIImage? {

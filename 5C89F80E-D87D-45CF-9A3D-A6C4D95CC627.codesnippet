@@ -3,29 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strToDic</string>
+	<string>mark - UISearchBarDelegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func convertStringToDictionary(text: String) -&gt; [String:AnyObject]? {
-    if let data = text.data(using: String.Encoding.utf8) {
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-        } catch let error as NSError {
-            print(error)
-        }
-    }
-    return nil
-}
+	<string>    // MARK: - UISearchBarDelegate
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9DB2DE17-4CEB-45AE-AFE9-C844620C9422</string>
+	<string>5C89F80E-D87D-45CF-9A3D-A6C4D95CC627</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - String to Dictionary</string>
+	<string>Swift Mark - UISearchBarDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

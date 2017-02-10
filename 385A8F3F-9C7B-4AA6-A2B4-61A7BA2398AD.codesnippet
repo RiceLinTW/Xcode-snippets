@@ -3,29 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strToDic</string>
+	<string>mark - vlc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func convertStringToDictionary(text: String) -&gt; [String:AnyObject]? {
-    if let data = text.data(using: String.Encoding.utf8) {
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-        } catch let error as NSError {
-            print(error)
-        }
-    }
-    return nil
-}
+	<string>    // MARK: - View Life Cycle
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9DB2DE17-4CEB-45AE-AFE9-C844620C9422</string>
+	<string>385A8F3F-9C7B-4AA6-A2B4-61A7BA2398AD</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - String to Dictionary</string>
+	<string>Swift Mark - View Life Cycle</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -6,7 +6,7 @@
 	<string>quicksort</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>func quicksort&lt;T: Comparable&gt;(_ a: [T]) -&gt; [T] {

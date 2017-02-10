@@ -6,7 +6,7 @@
 	<string>tokenStr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>func tokenizeArray(string:String) -&gt; NSArray {

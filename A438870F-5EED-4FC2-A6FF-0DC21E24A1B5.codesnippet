@@ -3,29 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strToDic</string>
+	<string>localizedString</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func convertStringToDictionary(text: String) -&gt; [String:AnyObject]? {
-    if let data = text.data(using: String.Encoding.utf8) {
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-        } catch let error as NSError {
-            print(error)
-        }
+	<string>extension String {
+    func localized() -&gt; String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
-    return nil
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9DB2DE17-4CEB-45AE-AFE9-C844620C9422</string>
+	<string>A438870F-5EED-4FC2-A6FF-0DC21E24A1B5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - String to Dictionary</string>
+	<string>Swift - String Localized</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

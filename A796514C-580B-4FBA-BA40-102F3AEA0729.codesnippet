@@ -3,29 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strToDic</string>
+	<string>screenSize</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func convertStringToDictionary(text: String) -&gt; [String:AnyObject]? {
-    if let data = text.data(using: String.Encoding.utf8) {
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-        } catch let error as NSError {
-            print(error)
-        }
-    }
-    return nil
-}
+	<string>let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9DB2DE17-4CEB-45AE-AFE9-C844620C9422</string>
+	<string>A796514C-580B-4FBA-BA40-102F3AEA0729</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - String to Dictionary</string>
+	<string>Swift - Screen Size</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

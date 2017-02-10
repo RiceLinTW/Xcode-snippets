@@ -3,29 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strToDic</string>
+	<string>mark - tableview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func convertStringToDictionary(text: String) -&gt; [String:AnyObject]? {
-    if let data = text.data(using: String.Encoding.utf8) {
-        do {
-            return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-        } catch let error as NSError {
-            print(error)
-        }
-    }
-    return nil
-}
+	<string>// MARK: - UITableViewDelegate, UITableViewDataSource
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9DB2DE17-4CEB-45AE-AFE9-C844620C9422</string>
+	<string>88AD0B42-397D-402F-96CD-F07DF73E6EA8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - String to Dictionary</string>
+	<string>Swift Mark - UITableViewDelegate, UITableViewDataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
