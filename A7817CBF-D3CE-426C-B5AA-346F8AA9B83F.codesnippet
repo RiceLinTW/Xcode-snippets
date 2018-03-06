@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark - vlc</string>
+	<string>mark - navigation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - Lifecycle
+	<string>    // MARK: Navigation
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>385A8F3F-9C7B-4AA6-A2B4-61A7BA2398AD</string>
+	<string>A7817CBF-D3CE-426C-B5AA-346F8AA9B83F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Mark - View Life Cycle</string>
+	<string>Mark - Navigation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

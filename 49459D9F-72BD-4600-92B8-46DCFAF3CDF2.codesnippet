@@ -3,20 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark - vlc</string>
+	<string>emailValidation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - Lifecycle
-</string>
+	<string>// MARK : - EmailCheck
+extension String {
+    var isValidateEmail: Bool {
+        get {
+            let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+            let test = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+            return test.evaluate(with:self)
+        }
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>385A8F3F-9C7B-4AA6-A2B4-61A7BA2398AD</string>
+	<string>49459D9F-72BD-4600-92B8-46DCFAF3CDF2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Mark - View Life Cycle</string>
+	<string>Swift - Email validation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

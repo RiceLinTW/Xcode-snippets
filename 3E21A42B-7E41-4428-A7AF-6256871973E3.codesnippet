@@ -3,20 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark - vlc</string>
+	<string>pushtoken</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - Lifecycle
+	<string>        let   tokenString = deviceToken.reduce("", {$0 + String(format: "%02X",    $1)})
+        print("deviceToken: \(tokenString)")
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>385A8F3F-9C7B-4AA6-A2B4-61A7BA2398AD</string>
+	<string>3E21A42B-7E41-4428-A7AF-6256871973E3</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Mark - View Life Cycle</string>
+	<string>Swift - Device Token for APNS</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
