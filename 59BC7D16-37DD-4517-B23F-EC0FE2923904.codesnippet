@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mime type</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension Data {
+    private static let mimeTypeSignatures: [UInt8 : String] = [
+        0xFF : "image/jpeg",
+        0x89 : "image/png",
+        0x47 : "image/gif",
+        0x49 : "image/tiff",
+        0x4D : "image/tiff",
+        0x25 : "application/pdf",
+        0xD0 : "application/vnd",
+        0x46 : "text/plain",
+        ]
+    
+    var mimeType: String {
+        var c: UInt8 = 0
+        copyBytes(to: &amp;c, count: 1)
+        return Data.mimeTypeSignatures[c] ?? "application/octet-stream"
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>59BC7D16-37DD-4517-B23F-EC0FE2923904</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift - Mime type</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
