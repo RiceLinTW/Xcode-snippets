@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>FormatStyle</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct &lt;#FormatName#&gt;: FormatStyle {
+
+  typealias FormatInput = &lt;#type#&gt;
+  typealias FormatOutput = &lt;#type#&gt;
+  
+  func format(_ value: FormatInput) -&gt; FormatOutput {
+    &lt;#code#&gt;
+  }
+}
+
+extension FormatStyle where Self == &lt;#FormatName#&gt; {
+  static var &lt;#formatName#&gt;: Self {
+    .init()
+  }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>05A220A7-C2A5-4928-AE31-8127D8A1CCCE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>FormatStyle</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
